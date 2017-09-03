@@ -2,7 +2,7 @@
 
 set -e
 
-_minify="$( which minify )"
+_minify="$( which minify || true )"
 if [ -z "$_minify" ]; then
   yarn global add minifier
 fi
